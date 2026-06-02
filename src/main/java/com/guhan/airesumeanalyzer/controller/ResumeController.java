@@ -22,9 +22,12 @@ import com.guhan.airesumeanalyzer.utils.ResumeDataExtractor;
 import com.guhan.airesumeanalyzer.utils.ResumeMatcher;
 import com.guhan.airesumeanalyzer.utils.ResumeSuggestionEngine;
 import com.guhan.airesumeanalyzer.utils.ResumeAIScorer;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 @RestController
 @RequestMapping("/resume")
+@CrossOrigin(origins = "http://localhost:5173")
+
 public class ResumeController {
 
     @Autowired
